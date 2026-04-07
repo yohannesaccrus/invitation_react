@@ -4,6 +4,7 @@ import { useMusic } from './components/MusicProvider'
 import FloatingToggle from './components/FloatingToggle'
 import { MailOpen } from 'lucide-react'
 import SangjitPage from './pages/Sangjit'
+import WeddingPage from './pages/Wedding'
 
 function HomeContent({ recipient }: { recipient: string }) {
   return (
@@ -109,15 +110,15 @@ function HomeContent({ recipient }: { recipient: string }) {
             Witness the union of Yohannes & Chattleya as we embark on our new Chapter of Life
           </p>
           
-          <button 
-            onClick={() => alert("Navigate to Wedding (To be implemented)")}
+          <Link 
+            to={`/wedding?to=${encodeURIComponent(recipient)}`}
             className="group relative flex items-center space-x-3 overflow-visible rounded-full border border-[#2f3542]/40 bg-[#2f3542]/5 px-8 py-3 md:px-10 md:py-4 text-sm font-medium tracking-[0.2em] text-[#2f3542] transition-all hover:bg-[#2f3542] hover:text-white animate-ring-pulse hover:cursor-pointer shadow-2xl"
           >
             <span>WEDDING DETAILS</span>
             <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
-          </button>
+          </Link>
         </div>
       </section>
     </div>
@@ -167,8 +168,10 @@ function App() {
             <p className="font-italiana text-sm font-medium tracking-[0.2em] text-rose-200 uppercase mb-8">
               The Wedding Of
             </p>
-            <h1 className="font-tangerine text-8xl tracking-tight text-white sm:text-9xl md:text-[10rem] mb-6 drop-shadow-2xl">
-              Accrus <span className="mx-2 font-normal text-[#f19066]">&amp;</span> Eren
+            <h1 className="font-tangerine text-8xl tracking-tight text-white sm:text-9xl md:text-[10rem] mb-6 drop-shadow-2xl flex flex-col md:flex-row items-center justify-center">
+              <span>Accrus</span>
+              <span className="my-2 md:my-0 md:mx-4 font-normal text-[#f19066] text-7xl md:text-[9rem] leading-none">&amp;</span>
+              <span>Eren</span>
             </h1>
 
             <div>
@@ -188,11 +191,12 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-neutral-100 text-neutral-900 transition-colors duration-1000 flex flex-col relative overflow-y-auto">
+    <div className="min-h-screen bg-neutral-100 text-neutral-900 transition-colors duration-1000 flex flex-col relative font-serif overflow-y-auto">
       <main className="relative min-h-screen animate-in fade-in duration-1000">
         <Routes>
           <Route path="/" element={<HomeContent recipient={recipient} />} />
           <Route path="/sangjit" element={<SangjitPage />} />
+          <Route path="/wedding" element={<WeddingPage />} />
         </Routes>
       </main>
       <FloatingToggle />

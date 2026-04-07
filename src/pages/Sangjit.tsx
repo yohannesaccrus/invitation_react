@@ -161,7 +161,7 @@ export default function SangjitPage() {
             <span className="absolute -top-12 -left-4 font-playfair text-[100px] md:text-[120px] text-[#DAA520] select-none opacity-10 pointer-events-none">“</span>
             <span className="absolute -bottom-24 -right-4 font-playfair text-[100px] md:text-[120px] text-[#DAA520] select-none opacity-10 pointer-events-none rotate-180">“</span>
             
-            <p className="font-playfair text-2xl md:text-3xl text-white leading-relaxed italic mb-8 px-8">
+            <p className="font-playfair text-2xl md:text-3xl text-white leading-relaxed mb-8 px-8">
               Two souls, two hearts, joined together in one timeless journey of love and tradition.
             </p>
             
