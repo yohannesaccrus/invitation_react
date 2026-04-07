@@ -72,7 +72,7 @@ function App() {
         <div className="flex min-h-screen flex-col-reverse lg:flex-row">
           
           {/* Sangjit Section */}
-          <section className="relative flex min-h-[80vh] flex-1 flex-col items-center justify-center overflow-hidden p-8 lg:min-h-screen">
+          <section className="relative flex min-h-[90vh] flex-1 flex-col items-center justify-center overflow-hidden p-8 lg:min-h-screen">
             <div className="absolute inset-0 bg-[#8B0000]" />
             <img 
               src="/sangjit.jpg" 
@@ -129,7 +129,7 @@ function App() {
           </section>
 
           {/* Wedding Section */}
-          <section className="relative flex min-h-[80vh] flex-1 flex-col items-center justify-center overflow-hidden p-8 lg:min-h-screen">
+          <section className="relative flex min-h-[90vh] flex-1 flex-col items-center justify-center overflow-hidden p-8 lg:min-h-screen">
             <div className="absolute inset-0 bg-neutral-100" />
             <img 
               src="/wedding.jpg" 
