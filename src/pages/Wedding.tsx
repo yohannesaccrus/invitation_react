@@ -89,7 +89,7 @@ export default function WeddingPage() {
               {/* Groom */}
               <div className="flex flex-col items-center space-y-6">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-lg overflow-hidden relative">
-                   <img src="/accrus.JPG" alt="Accrus" className="absolute inset-0 w-full h-full object-cover object-center" />
+                   <img src="/accrus.jpg" alt="Accrus" className="absolute inset-0 w-full h-full object-cover object-center" />
                    <div className="absolute inset-0 bg-[#2f3542]/10 mix-blend-overlay pointer-events-none" />
                 </div>
                 <div>
